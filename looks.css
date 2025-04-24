@@ -1,0 +1,130 @@
+
+body {
+  background-color: rgb(186, 137, 233);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 700px;
+  background-color: rgb(78, 76, 76);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.head {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input.tasks,
+input.date,
+input.time {
+  border-radius: 15px;
+  height: 30px;
+  border: none;
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+.add,
+.clear {
+  border-radius: 15px;
+  height: 32px;
+  padding: 0 15px;
+  font-weight: bold;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add {
+  background-color: rgb(65, 204, 65);
+}
+
+.add:hover {
+  background-color: rgb(52, 168, 52);
+}
+
+.clear {
+  background-color: rgb(192, 40, 40);
+}
+
+.clear:hover {
+  background-color: rgb(150, 30, 30);
+}
+
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.task-done {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.task-item span {
+  flex: 1;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  color: #3a3939;
+  background-color: #fff;
+}
+
+.task-item button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-todo-button {
+  background-color: #ffa500;
+  color: white;
+}
+
+.edit-todo-button:hover {
+  background-color: #e69500;
+}
+
+.delete-todo-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete-todo-button:hover {
+  background-color: #bb2d3b;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
